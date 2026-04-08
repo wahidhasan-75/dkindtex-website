@@ -4,21 +4,18 @@
     <meta charset="utf-8" />
     <title>DKIND TEX</title>
     <script>
-<<<<<<< HEAD
-      sessionStorage.redirect = location.href;
-    </script>
-    <meta http-equiv="refresh" content="0;URL='/dkindtex-website/'" />
-=======
-      // GitHub Pages SPA redirect trick
-      // Stores the path in sessionStorage and redirects to index.html
       var path = window.location.pathname;
       var repo = '/dkindtex-website';
       var search = window.location.search;
       var hash = window.location.hash;
-      var redirect = repo + '/?p=' + encodeURIComponent(path.replace(repo, '') + search) + (hash ? '&hash=' + encodeURIComponent(hash) : '');
+      var redirect =
+        repo +
+        '/?p=' +
+        encodeURIComponent(path.replace(repo, '') + search) +
+        (hash ? '&hash=' + encodeURIComponent(hash) : '');
+
       window.location.replace(redirect);
     </script>
->>>>>>> 575bbc3cea28d274b976a728cf458e9a0a7e7d89
   </head>
   <body></body>
 </html>
