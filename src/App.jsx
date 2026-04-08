@@ -17,7 +17,11 @@ function ScrollToTop() {
 
 export default function App() {
   return (
+<<<<<<< HEAD
     <Router basename="/dkindtex-website">
+=======
+    <Router>
+>>>>>>> 575bbc3cea28d274b976a728cf458e9a0a7e7d89
       <ScrollToTop />
       <Navbar />
       <Routes>

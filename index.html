@@ -8,10 +8,16 @@
     <title>DKIND TEX | Export & Import</title>
     <script>
       (function() {
+<<<<<<< HEAD
         var redirect = sessionStorage.redirect;
         delete sessionStorage.redirect;
         if (redirect && redirect !== location.href) {
           history.replaceState(null, null, redirect);
+=======
+        var p = new URLSearchParams(location.search).get('p');
+        if (p) {
+          history.replaceState(null, null, '/dkindtex-website' + decodeURIComponent(p));
+>>>>>>> 575bbc3cea28d274b976a728cf458e9a0a7e7d89
         }
       })();
     </script>
