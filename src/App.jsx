@@ -11,17 +11,17 @@ import Contact from './pages/Contact'
 
 function ScrollToTop() {
   const { pathname } = useLocation()
-  useEffect(() => { window.scrollTo(0, 0) }, [pathname])
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [pathname])
+
   return null
 }
 
 export default function App() {
   return (
-<<<<<<< HEAD
-    <Router basename="/dkindtex-website">
-=======
     <Router>
->>>>>>> 575bbc3cea28d274b976a728cf458e9a0a7e7d89
       <ScrollToTop />
       <Navbar />
       <Routes>
